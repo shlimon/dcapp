@@ -15,7 +15,7 @@ body{
      'main'
      'nav'
     ;
-    grid-template-rows: 90% 10%;
+    grid-template-rows: 1fr 40px;
     user-select: none;
 }
 
@@ -212,7 +212,7 @@ main{
 
 .r-container{
     width: 95%;
-    height: 10%;
+    height: 15%;
     background-color: #3d1144;
     margin: 1px auto;
     border-radius: 10px;
