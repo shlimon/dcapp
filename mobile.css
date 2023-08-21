@@ -11,17 +11,17 @@ body{
     height: 100vh;
     display: grid;
     grid-template-areas: 
-     'header'
+
      'main'
      'nav'
     ;
-    grid-template-rows: 50px 1fr 40px;
+    grid-template-rows: 1fr 45px;
 }
 
 
 
 
-header,
+
 main,
 nav{
     /* border: 1px solid black; */
