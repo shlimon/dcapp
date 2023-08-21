@@ -48,6 +48,10 @@ header h3{
 
 nav{
     grid-area: nav;
+    background-color: #F7F7F7;
+    border-radius: 10px;
+    width: 95%;
+    margin: auto;
 }
 
 .nav-btn-box{
@@ -204,7 +208,7 @@ main{
 .recycle-view{
     /* background-color: blue; */
     max-width: 380px;
-    height: 80vh;
+    height: 70vh;
     margin:10px auto ;
     display: flex;
     flex-direction: column;
@@ -212,7 +216,7 @@ main{
 
 .r-container{
     width: 95%;
-    height: 15%;
+    height: 13%;
     background-color: #3d1144;
     margin: 1px auto;
     border-radius: 10px;
