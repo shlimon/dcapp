@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <title>DC APP</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/site.webmanifest" />
+    <link rel="stylesheet" href="mobile.css" />
+  </head>
+  <body>
+    <header>
+      <h3>Decent Care</h3>
+    </header>
+
+    <main></main>
+
+    <nav>
+      <div class="nav-btn-box">
+        <div class="nav-btn" id="home" onclick="redirect(this.id)">
+          <span class="material-icons-sharp btn"> dashboard </span>
+        </div>
+        <div class="nav-btn" id="forms" onclick="redirect(this.id)">
+          <span class="material-icons-sharp btn"> assignment </span>
+        </div>
+        <div class="nav-btn" id="work" onclick="redirect(this.id)">
+          <span class="material-icons-sharp btn"> business_center </span>
+        </div>
+        <div class="nav-btn" id="Announce" onclick="redirect(this.id)">
+          <span class="material-icons-sharp btn"> campaign </span>
+        </div>
+        <div class="nav-btn" id="resource" onclick="redirect(this.id)">
+          <span class="material-icons-sharp btn" style="color: purple">
+            hub
+          </span>
+        </div>
+      </div>
+    </nav>
+  </body>
+  <script>
+    function redirect(id) {
+      if (id == "home") {
+        window.location.href = "index.html";
+      } else if (id == "forms") {
+        window.location.href = "forms.html";
+      } else if (id == "work") {
+        window.location.href = "work.html";
+      } else if (id == "Announce") {
+        window.location.href = "Announce.html";
+      } else if (id == "resource") {
+        window.location.href = "resource.html";
+      }
+    }
+  </script>
+  <script src="engine.js"></script>
+</html>

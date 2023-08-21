@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <title>DC APP</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/site.webmanifest" />
+    <link rel="stylesheet" href="mobile.css" />
+  </head>
+  <body>
+    <header>
+      <h3>Decent Care</h3>
+    </header>
+
+    <main>
+      <div class="content">
+        <div class="tile">
+          <div class="ico">
+            <span class="material-icons-sharp ico-color"> blur_on </span>
+          </div>
+          <div class="description">
+            <h5>Participant Complaint</h5>
+            <p>
+              Share concerns, improve participant experience with easy complaint
+              submission.
+            </p>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="tile">
+          <div class="ico">
+            <span class="material-icons-sharp ico-color"> psychology </span>
+          </div>
+          <div class="description">
+            <h5>Participant Incident</h5>
+            <p>
+              Report incidents swiftly, ensuring participant safety and
+              well-being.
+            </p>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="tile">
+          <div class="ico">
+            <span class="material-icons-sharp ico-color"> waves </span>
+          </div>
+          <div class="description">
+            <h5>Conflict of Interest</h5>
+            <p>
+              Maintain transparency, disclose potential conflicts for ethical
+              decision-making.
+            </p>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="tile">
+          <div class="ico">
+            <span class="material-icons-sharp ico-color"> swap_horiz </span>
+          </div>
+          <div class="description">
+            <h5>Medication Schedule</h5>
+            <p>
+              Track and manage medications effortlessly, ensuring timely and
+              accurate dosages.
+            </p>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="tile">
+          <div class="ico">
+            <span class="material-icons-sharp ico-color"> camera </span>
+          </div>
+          <div class="description">
+            <h5>Media Release</h5>
+            <p>
+              Grant or restrict media usage rights conveniently and efficiently.
+            </p>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="tile">
+          <div class="ico">
+            <span class="material-icons-sharp ico-color"> swap_horiz </span>
+          </div>
+          <div class="description">
+            <h5>Financial Transaction</h5>
+            <p>
+              Securely handle financial matters with our streamlined transaction
+              process.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- end of content -->
+    </main>
+
+    <nav>
+      <div class="nav-btn-box">
+        <div class="nav-btn" id="home" onclick="redirect(this.id)">
+          <span class="material-icons-sharp btn"> dashboard </span>
+        </div>
+        <div class="nav-btn" id="forms" onclick="redirect(this.id)">
+          <span class="material-icons-sharp btn" style="color: purple">
+            assignment
+          </span>
+        </div>
+        <div class="nav-btn" id="work" onclick="redirect(this.id)">
+          <span class="material-icons-sharp btn"> business_center </span>
+        </div>
+        <div class="nav-btn" id="Announce" onclick="redirect(this.id)">
+          <span class="material-icons-sharp btn"> campaign </span>
+        </div>
+        <div class="nav-btn" id="resource" onclick="redirect(this.id)">
+          <span class="material-icons-sharp btn"> hub </span>
+        </div>
+      </div>
+    </nav>
+  </body>
+  <script>
+    function redirect(id) {
+      if (id == "home") {
+        window.location.href = "index.html";
+      } else if (id == "forms") {
+        window.location.href = "forms.html";
+      } else if (id == "work") {
+        window.location.href = "work.html";
+      } else if (id == "Announce") {
+        window.location.href = "Announce.html";
+      } else if (id == "resource") {
+        window.location.href = "resource.html";
+      }
+    }
+  </script>
+</html>
