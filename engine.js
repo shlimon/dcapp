@@ -1,6 +1,6 @@
 
 if (localStorage.getItem("userName")==='undefined' || localStorage.getItem("userName") === null || localStorage.getItem("userName") === ''){
-    let userName = prompt("Please enter your name");
+    let userName = prompt("Please enter your last name");
     localStorage.setItem("userName", userName);
     document.getElementById("name").innerText = `Hello, ${userName} 👋`;
 }
@@ -21,7 +21,7 @@ const URL = "https://api.openweathermap.org/data/2.5/weather?q=Melbourne,au&appi
 
         document.getElementById("current-temp").innerHTML = "<i>Current temperature: <b>"+ data.main.temp+"</b></i>";
         document.getElementById("max-temp").innerHTML = "<i>Max temperature: <b>"+ data.main.temp_max+"</b></i>";
-        document.getElementById("weather-des").innerText = data.weather[0].description;
+        document.getElementById("weather-des").innerHTML = "<i>"+data.weather[0].description+"</i>";
         document.getElementById("weather-icon").src =  "https://openweathermap.org/img/wn/"+data.weather[0].icon+"@2x.png";  
 
     }); 
