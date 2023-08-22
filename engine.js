@@ -9,13 +9,12 @@ let name = localStorage.getItem('userName');
 document.getElementById("name").innerText = `Hello, ${name} 👋`;
 
 
-navigator.geolocation.getCurrentPosition((position) => {
+const URL = "https://api.openweathermap.org/data/2.5/weather?q=Melbourne,au&appid=df355489397b8066e9c8cba704a4e358&units=metric"
 
-    let lat = position.coords.latitude;
-    let long = position.coords.longitude;
+
 
     
-    fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=df355489397b8066e9c8cba704a4e358&units=metric`)
+    fetch(URL)
     .then(response => response.json())
     .then(data => {
         console.log(data.main.temp, data.main.temp_max, data.weather[0].description);
@@ -25,6 +24,5 @@ navigator.geolocation.getCurrentPosition((position) => {
         document.getElementById("weather-des").innerText = data.weather[0].description;
         document.getElementById("weather-icon").src =  "https://openweathermap.org/img/wn/"+data.weather[0].icon+"@2x.png";  
 
-    });     
-});
+    }); 
 
